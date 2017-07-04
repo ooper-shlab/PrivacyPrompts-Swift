@@ -701,7 +701,7 @@ class APLPrivacyClassesTableViewController: UITableViewController, UINavigationC
             // No homes are available.  Is that because no home is set in HMHomeManager, or because the user denied access?
             manager.addHome(withName: "Test Home") {[weak manager]/* Prevent memory leak */ home, error in
                 
-                if let error = error as? NSError {
+                if let error = error as NSError? {
                     if error.code == HMError.homeAccessNotAuthorized.rawValue {
                         // User denied permission
                         self.alertViewWithDataClass(.home, status: NSLocalizedString("DENIED", comment: ""))
