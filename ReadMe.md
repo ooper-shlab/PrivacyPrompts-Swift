@@ -1,21 +1,20 @@
 # PrivacyPrompts
 
-===========================================================================
+PrivacyPrompts shows how to check and request access to protected data classes,
+such as Location, Contacts, and social media, as well as device resources, such 
+as the microphone, in Privacy Settings in iOS.
 
-PrivacyPrompts shows how to check and request access to data classes such as Location, Contacts, and social media in Privacy Settings on iOS.
+## Requirements
 
-The application has two view controllers:
+### Build
 
-* APLPrivacyClassesTableViewController is a tableview controller that displays all the privacy data classes in the system.
-* APLPrivacyDetailViewController is a view controller that handles checking and requesting access to the users private data classes.
+Xcode 8.3.1 or later; iOS 10.3 SDK or later
 
-===========================================================================
-Build/Runtime Requirements
+### Runtime
 
-In order to run this sample on a device, you will need to change the bundle identifier of the application.
+iOS 10.0 or later
+The HealthKit feature requires an iPhone. You can generate 
+the "restricted" responses on some of the privacy classes by enabling Restrictions 
+on a device in Settings > Restrictions.
 
-Building this sample requires Xcode 7.0 and iOS 9.0 SDK
-Running the sample requires iOS 9.0 or later.
-
-==================================================
-Copyright (C) 2015 Apple Inc. All rights reserved.
+Copyright (C) 2016-2017 Apple Inc. All rights reserved.

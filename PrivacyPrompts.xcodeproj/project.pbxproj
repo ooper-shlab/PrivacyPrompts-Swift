@@ -8,30 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		6036E6851B9121E500A193C8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6036E6841B9121E500A193C8 /* Launch Screen.storyboard */; };
-		B406FE0E173DFC070087F899 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B406FE0C173DFC070087F899 /* InfoPlist.strings */; };
 		B406FE1D173DFC070087F899 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B406FE1B173DFC070087F899 /* MainStoryboard.storyboard */; };
 		B4CEAF9617BAEC2D006D4ED1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CEAF9517BAEC2D006D4ED1 /* Images.xcassets */; };
 		B4CEAF9E17BAEDE1006D4ED1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4CEAFA017BAEDE1006D4ED1 /* Localizable.strings */; };
-		D74A22AE1C5347C80068A15F /* APLPrivacyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74A22AD1C5347C80068A15F /* APLPrivacyDetailViewController.swift */; };
-		D74A22B01C534A7E0068A15F /* APLPrivacyClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74A22AF1C534A7E0068A15F /* APLPrivacyClassesTableViewController.swift */; };
-		D7E6EAD21C552E0D00D86FD3 /* APLAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6EAD11C552E0C00D86FD3 /* APLAppDelegate.swift */; };
+		D7666DDD1F0C50DF00A5495A /* APLPrivacyClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7666DDA1F0C50DF00A5495A /* APLPrivacyClassesTableViewController.swift */; };
+		D7666DDE1F0C50DF00A5495A /* APLAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7666DDB1F0C50DF00A5495A /* APLAppDelegate.swift */; };
+		D7666DDF1F0C50DF00A5495A /* APLPrivacyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7666DDC1F0C50DF00A5495A /* APLPrivacyDetailViewController.swift */; };
+		EB4C1BCE1E9BFFCB006B07DD /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4C1BCD1E9BFFCB006B07DD /* HomeKit.framework */; };
+		EB4C1BD01E9BFFCD006B07DD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4C1BCF1E9BFFCD006B07DD /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6036E6841B9121E500A193C8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		609230071B99151B000380E1 /* PrivacyPrompts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyPrompts.entitlements; sourceTree = "<group>"; };
-		60D8691A1B91163900FC69BC /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		B406FE00173DFC070087F899 /* PrivacyPrompts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivacyPrompts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B406FE0B173DFC070087F899 /* PrivacyPrompts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrivacyPrompts-Info.plist"; sourceTree = "<group>"; };
 		B4CEAF9517BAEC2D006D4ED1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B4CEAF9717BAECF5006D4ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B4CEAF9F17BAEDE1006D4ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B4CEAFA317BAEF2E006D4ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D74A22AD1C5347C80068A15F /* APLPrivacyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLPrivacyDetailViewController.swift; sourceTree = "<group>"; };
-		D74A22AF1C534A7E0068A15F /* APLPrivacyClassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLPrivacyClassesTableViewController.swift; sourceTree = "<group>"; };
-		D7E6EAD11C552E0C00D86FD3 /* APLAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLAppDelegate.swift; sourceTree = "<group>"; };
-		D7E6EAD31C56451100D86FD3 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		D7E6EAD41C56454000D86FD3 /* README2.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README2.md; sourceTree = "<group>"; };
+		B5BEFD921D2029BB00ACC06F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D7666DDA1F0C50DF00A5495A /* APLPrivacyClassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLPrivacyClassesTableViewController.swift; sourceTree = "<group>"; };
+		D7666DDB1F0C50DF00A5495A /* APLAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLAppDelegate.swift; sourceTree = "<group>"; };
+		D7666DDC1F0C50DF00A5495A /* APLPrivacyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLPrivacyDetailViewController.swift; sourceTree = "<group>"; };
+		D7666DE01F0C50FF00A5495A /* README2.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README2.md; sourceTree = "<group>"; };
+		D7666DE11F0C50FF00A5495A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		EB4C1BCD1E9BFFCB006B07DD /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		EB4C1BCF1E9BFFCD006B07DD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4C1BCE1E9BFFCB006B07DD /* HomeKit.framework in Frameworks */,
+				EB4C1BD01E9BFFCD006B07DD /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,11 +52,12 @@
 		B406FDF7173DFC070087F899 = {
 			isa = PBXGroup;
 			children = (
-				D7E6EAD31C56451100D86FD3 /* LICENSE.txt */,
-				60D8691A1B91163900FC69BC /* ReadMe.md */,
-				D7E6EAD41C56454000D86FD3 /* README2.md */,
+				D7666DE11F0C50FF00A5495A /* LICENSE.txt */,
+				B5BEFD921D2029BB00ACC06F /* README.md */,
+				D7666DE01F0C50FF00A5495A /* README2.md */,
 				B406FE09173DFC070087F899 /* PrivacyPrompts */,
 				B406FE01173DFC070087F899 /* Products */,
+				EB4C1BCC1E9BFFCB006B07DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,9 +72,9 @@
 		B406FE09173DFC070087F899 /* PrivacyPrompts */ = {
 			isa = PBXGroup;
 			children = (
-				D74A22AF1C534A7E0068A15F /* APLPrivacyClassesTableViewController.swift */,
-				D74A22AD1C5347C80068A15F /* APLPrivacyDetailViewController.swift */,
-				D7E6EAD11C552E0C00D86FD3 /* APLAppDelegate.swift */,
+				D7666DDA1F0C50DF00A5495A /* APLPrivacyClassesTableViewController.swift */,
+				D7666DDC1F0C50DF00A5495A /* APLPrivacyDetailViewController.swift */,
+				D7666DDB1F0C50DF00A5495A /* APLAppDelegate.swift */,
 				B406FE0A173DFC070087F899 /* Supporting Files */,
 			);
 			path = PrivacyPrompts;
@@ -78,31 +83,23 @@
 		B406FE0A173DFC070087F899 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B4A509DC173EBC4600AF3B27 /* Resources */,
-				B4A509DB173EBC3400AF3B27 /* Storyboards */,
+				B4CEAF9517BAEC2D006D4ED1 /* Images.xcassets */,
+				B4CEAFA017BAEDE1006D4ED1 /* Localizable.strings */,
+				B406FE0B173DFC070087F899 /* PrivacyPrompts-Info.plist */,
+				609230071B99151B000380E1 /* PrivacyPrompts.entitlements */,
+				6036E6841B9121E500A193C8 /* Launch Screen.storyboard */,
+				B406FE1B173DFC070087F899 /* MainStoryboard.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B4A509DB173EBC3400AF3B27 /* Storyboards */ = {
+		EB4C1BCC1E9BFFCB006B07DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6036E6841B9121E500A193C8 /* Launch Screen.storyboard */,
-				B406FE1B173DFC070087F899 /* MainStoryboard.storyboard */,
+				EB4C1BCF1E9BFFCD006B07DD /* HealthKit.framework */,
+				EB4C1BCD1E9BFFCB006B07DD /* HomeKit.framework */,
 			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
-		B4A509DC173EBC4600AF3B27 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B4CEAF9517BAEC2D006D4ED1 /* Images.xcassets */,
-				B406FE0C173DFC070087F899 /* InfoPlist.strings */,
-				B4CEAFA017BAEDE1006D4ED1 /* Localizable.strings */,
-				B406FE0B173DFC070087F899 /* PrivacyPrompts-Info.plist */,
-				609230071B99151B000380E1 /* PrivacyPrompts.entitlements */,
-			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,17 +128,20 @@
 		B406FDF8173DFC070087F899 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Apple, Inc";
 				TargetAttributes = {
 					B406FDFF173DFC070087F899 = {
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
 							};
 							com.apple.HomeKit = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
 								enabled = 1;
 							};
 						};
@@ -175,7 +175,6 @@
 				B4CEAF9E17BAEDE1006D4ED1 /* Localizable.strings in Resources */,
 				B4CEAF9617BAEC2D006D4ED1 /* Images.xcassets in Resources */,
 				6036E6851B9121E500A193C8 /* Launch Screen.storyboard in Resources */,
-				B406FE0E173DFC070087F899 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,23 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74A22AE1C5347C80068A15F /* APLPrivacyDetailViewController.swift in Sources */,
-				D74A22B01C534A7E0068A15F /* APLPrivacyClassesTableViewController.swift in Sources */,
-				D7E6EAD21C552E0D00D86FD3 /* APLAppDelegate.swift in Sources */,
+				D7666DDD1F0C50DF00A5495A /* APLPrivacyClassesTableViewController.swift in Sources */,
+				D7666DDE1F0C50DF00A5495A /* APLAppDelegate.swift in Sources */,
+				D7666DDF1F0C50DF00A5495A /* APLPrivacyDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B406FE0C173DFC070087F899 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4CEAFA317BAEF2E006D4ED1 /* Base */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B406FE1B173DFC070087F899 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -295,9 +286,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -312,15 +302,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PrivacyPrompts/PrivacyPrompts-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "PrivacyPrompts/PrivacyPrompts-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PrivacyPrompts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos.internal;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
@@ -337,15 +327,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PrivacyPrompts/PrivacyPrompts-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "PrivacyPrompts/PrivacyPrompts-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.PrivacyPrompts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos.internal;
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};

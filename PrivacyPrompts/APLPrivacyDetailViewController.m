@@ -1,5 +1,5 @@
 /*
- Copyright (C) 2016 Apple Inc. All Rights Reserved.
+ Copyright (C) 2017 Apple Inc. All Rights Reserved.
  See LICENSE.txt for this sample’s licensing information
  
  Abstract:
@@ -18,36 +18,35 @@
     if(self.checkBlock || self.requestBlock) {
         return 1;
     }
-    
     return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ActionCell" forIndexPath:indexPath];
     
-    NSInteger num = [tableView numberOfRowsInSection:indexPath.section];
-    if(num == 2) {
+    NSInteger rowsInSection = [tableView numberOfRowsInSection:indexPath.section];
+    if(rowsInSection == 2) {
         if(indexPath.row == 0) {
-            [[cell textLabel] setText:NSLocalizedString(@"CHECK_ACCESS", @"")];
+            cell.textLabel.text = NSLocalizedString(@"CHECK_ACCESS", @"");
         }
         if(indexPath.row == 1) {
-            [[cell textLabel] setText:NSLocalizedString(@"REQUEST_ACCESS", @"")];
+            cell.textLabel.text = NSLocalizedString(@"REQUEST_ACCESS", @"");
         }
     }
-    else if(num == 1) {
+    else if(rowsInSection == 1) {
         if(self.checkBlock) {
-            [[cell textLabel] setText:NSLocalizedString(@"CHECK_ACCESS", @"")];
+            cell.textLabel.text = NSLocalizedString(@"CHECK_ACCESS", @"");
         }
         else if(self.requestBlock) {
-            [[cell textLabel] setText:NSLocalizedString(@"REQUEST_ACCESS", @"")];
+            cell.textLabel.text = NSLocalizedString(@"REQUEST_ACCESS", @"");
         }
     }
-    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger rowsInSection = [tableView numberOfRowsInSection:indexPath.section];
+    
     if(rowsInSection == 2) {
         if(indexPath.row == 0) {
             if(self.checkBlock) {

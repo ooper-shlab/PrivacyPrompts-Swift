@@ -6,7 +6,7 @@
 //
 //
 /*
- Copyright (C) 2016 Apple Inc. All Rights Reserved.
+ Copyright (C) 2017 Apple Inc. All Rights Reserved.
  See LICENSE.txt for this sample’s licensing information
 
  Abstract:
@@ -20,7 +20,6 @@ typealias RequestAccessBlock = ()->Void
 
 @objc(APLPrivacyDetailViewController)
 class APLPrivacyDetailViewController: UITableViewController {
-    
     var checkBlock: CheckAccessBlock?
     var requestBlock: RequestAccessBlock?
     
@@ -32,21 +31,20 @@ class APLPrivacyDetailViewController: UITableViewController {
         if self.checkBlock != nil || self.requestBlock != nil {
             return 1
         }
-        
         return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ActionCell", for: indexPath)
         
-        let num = tableView.numberOfRows(inSection: (indexPath as NSIndexPath).section)
-        if num == 2 {
-            if (indexPath as NSIndexPath).row == 0 {
+        let rowsInSection = tableView.numberOfRows(inSection: indexPath.section)
+        if rowsInSection == 2 {
+            if indexPath.row == 0 {
                 cell.textLabel?.text = NSLocalizedString("CHECK_ACCESS", comment: "")
-            } else if (indexPath as NSIndexPath).row == 1 {
+            } else if indexPath.row == 1 {
                 cell.textLabel?.text = NSLocalizedString("REQUEST_ACCESS", comment: "")
             }
-        } else if num == 1 {
+        } else if rowsInSection == 1 {
             if self.checkBlock != nil {
                 cell.textLabel?.text = NSLocalizedString("CHECK_ACCESS", comment: "")
             } else if self.requestBlock != nil {
@@ -58,12 +56,12 @@ class APLPrivacyDetailViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let rowsInSection = tableView.numberOfRows(inSection: (indexPath as NSIndexPath).section)
+        let rowsInSection = tableView.numberOfRows(inSection: indexPath.section)
         if rowsInSection == 2 {
-            if (indexPath as NSIndexPath).row == 0 {
+            if indexPath.row == 0 {
                 self.checkBlock?()
             }
-            if (indexPath as NSIndexPath).row == 1 {
+            if indexPath.row == 1 {
                 self.requestBlock?()
             }
         } else if rowsInSection == 1 {
